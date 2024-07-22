@@ -3,14 +3,9 @@ import 'package:cat_project/second_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class Home2 extends StatefulWidget {
+class Home2 extends StatelessWidget {
   const Home2({super.key});
 
-  @override
-  State<Home2> createState() => _Home2State();
-}
-
-class _Home2State extends State<Home2> {
   @override
   Widget build(BuildContext context) {
     var controller = Get.put(Homecontroller());
@@ -60,7 +55,7 @@ class _Home2State extends State<Home2> {
                       Padding(
                         padding: EdgeInsets.only(left: 10),
                         child: Text(
-                          'You have 3 items in your list chart',
+                          'You have 2 items in your list chart',
                           style: TextStyle(fontSize: 17, color: Colors.red),
                         ),
                       )
