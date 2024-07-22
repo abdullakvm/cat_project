@@ -273,7 +273,7 @@ class _Home2State extends State<Home2> {
                       backgroundColor: WidgetStatePropertyAll(
                           Color.fromARGB(255, 2, 51, 164))),
                   child: const Text(
-                    'Checkout',
+                    'Place Order',
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
