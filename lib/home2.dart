@@ -82,21 +82,38 @@ class _Home2State extends State<Home2> {
                           color: Color(0xFF041444),
                           fontWeight: FontWeight.bold),
                     ),
-                    subtitle: const Padding(
-                      padding: EdgeInsets.only(right: 70),
-                      child: Column(
-                        children: [
-                          Text('Size - M',
-                              style: TextStyle(fontWeight: FontWeight.bold)),
-                          Text(
-                            '-\$50.00',
-                            style: TextStyle(
-                                fontSize: 16,
-                                color: Colors.red,
-                                fontWeight: FontWeight.bold),
-                          )
-                        ],
-                      ),
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(right: 60),
+                      child: Column(children: [
+                        const Text(
+                          'Size - M',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        Obx(
+                          () => RichText(
+                            text: TextSpan(
+                              children: [
+                                const TextSpan(
+                                  text: '-\$',
+                                  style: TextStyle(
+                                    color: Colors.red,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: '${controller.total}',
+                                  style: const TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.red,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ]),
                     ),
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
@@ -137,23 +154,38 @@ class _Home2State extends State<Home2> {
                               fontWeight: FontWeight.bold),
                         ),
                       ),
-                      subtitle: const Padding(
-                        padding: EdgeInsets.only(right: 60),
-                        child: Column(
-                          children: [
-                            Text(
-                              'Size - 32',
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                      subtitle: Padding(
+                        padding: const EdgeInsets.only(right: 45),
+                        child: Column(children: [
+                          const Text(
+                            'Size - 38',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Obx(
+                            () => RichText(
+                              text: TextSpan(
+                                children: [
+                                  const TextSpan(
+                                    text: '-\$',
+                                    style: TextStyle(
+                                      color: Colors.red,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: '${controller.total2}',
+                                    style: const TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.red,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
-                            Text(
-                              '-\$76.00',
-                              style: TextStyle(
-                                  fontSize: 16,
-                                  color: Colors.red,
-                                  fontWeight: FontWeight.bold),
-                            )
-                          ],
-                        ),
+                          ),
+                        ]),
                       ),
                       trailing: Row(
                         mainAxisSize: MainAxisSize.min,

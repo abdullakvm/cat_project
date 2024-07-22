@@ -9,11 +9,11 @@ class Secondpage extends StatelessWidget {
       body: SafeArea(
           child: Center(
         child: Text(
-          'Thank You!',
+          'Your Order has been Placed',
           style: TextStyle(
-              fontSize: 50,
+              fontSize: 30,
               fontWeight: FontWeight.bold,
-              color: Color.fromARGB(255, 138, 19, 19)),
+              color: Color.fromARGB(255, 2, 51, 164)),
         ),
       )),
     );
